@@ -1,18 +1,17 @@
-// Fitur kecil: klik email di section kontak buat copy ke clipboard,
-// biar user gak perlu select-text manual. Contoh simpel pemakaian
-// Clipboard API + event handling.
+const copyEmailButton = document.getElementById('copy-email');
+const copyStatus = document.getElementById('copy-status');
+const emailAddress = 'pradiarya9@gmail.com';
 
-const emailLink = document.getElementById('email-link');
+copyEmailButton.addEventListener('click', async () => {
+  if (!navigator.clipboard) {
+    copyStatus.textContent = 'Clipboard tidak tersedia. Silakan salin alamat email secara manual.';
+    return;
+  }
 
-emailLink.addEventListener('click', (e) => {
-  e.preventDefault();
-  const email = emailLink.textContent;
-
-  navigator.clipboard.writeText(email).then(() => {
-    const original = emailLink.textContent;
-    emailLink.textContent = 'Email disalin!';
-    setTimeout(() => {
-      emailLink.textContent = original;
-    }, 1500);
-  });
+  try {
+    await navigator.clipboard.writeText(emailAddress);
+    copyStatus.textContent = 'Alamat email berhasil disalin.';
+  } catch {
+    copyStatus.textContent = 'Email belum bisa disalin. Silakan salin alamat email secara manual.';
+  }
 });

@@ -1,38 +1,32 @@
-# Personal Portfolio — Arya
+# Arya Pradi — Portfolio
 
-A one-page developer portfolio site showcasing projects, current
-skills, and contact info. Built with vanilla HTML, CSS, and
-JavaScript.
+Portfolio satu halaman untuk memperkenalkan Arya, menampilkan proyek web,
+hal-hal yang sedang dipelajari, sertifikat, dan informasi kontak.
 
-## Sections
+## Teknologi
 
-- Hero introduction
-- Project showcase (links out to other repos/live demos)
-- Skills currently being learned
-- Contact section with a click-to-copy email
+- HTML semantik
+- CSS dengan custom properties, Grid, Flexbox, dan layout responsif
+- JavaScript untuk menyalin alamat email
+- Google Fonts: DM Sans, DM Mono, dan Space Grotesk
 
-## Tech Stack
+## Struktur
 
-- HTML5
-- CSS3 (custom properties, Flexbox, Grid, responsive layout)
-- JavaScript (Clipboard API)
-
-## Project Structure
-
-```
-arya-portfolio/
+```text
+.
 ├── index.html
 ├── styles.css
 ├── script.js
-└── README.md
+└── certificates/
 ```
 
-## Before Publishing
+## Menjalankan secara lokal
 
-Replace the placeholder email (`hello@example.com`) in `index.html`
-and the "Lihat kode" link on the Focus project card with the real
-repo URL.
+Buka `index.html` di browser. Tidak memerlukan proses build atau instalasi
+dependency.
 
-## Running Locally
+## Kustomisasi
 
-No build step required. Open `index.html` directly in a browser.
+Perbarui informasi profil, proyek, kontak, dan sertifikat langsung di
+`index.html`. Gaya visual dan breakpoint responsif berada di `styles.css`;
+perilaku tombol salin email berada di `script.js`.

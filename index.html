@@ -1,151 +1,158 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Arya — IT Student & Web Developer</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4f1e9">
+  <meta name="description" content="Portfolio Arya, mahasiswa Sistem Informasi yang sedang membangun pengalaman di web development.">
+  <title>Arya Pradi — Web Developer in Progress</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
   <header class="site-header">
-    <div class="wrap">
-      <span class="mark">arya<span class="dot">.</span></span>
-      <nav>
-        <a href="#projects">Project</a>
-        <a href="#skills">Skill</a>
-        <a href="#contact">Kontak</a>
-        <a href="#certifications">Sertifikasi</a>
+    <div class="wrap header-inner">
+      <a class="wordmark" href="#top" aria-label="Arya, ke halaman atas">arya<span>.</span></a>
+      <nav class="main-nav" aria-label="Navigasi utama">
+        <a href="#work">Karya <span>01</span></a>
+        <a href="#about">Tentang <span>02</span></a>
+        <a href="#credentials">Sertifikat <span>03</span></a>
       </nav>
+      <a class="header-cta" href="#contact">Mari ngobrol <span aria-hidden="true">↗</span></a>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="wrap">
-      <p class="kicker">IT Student — Belajar Web Development</p>
-      <h1>Arya<br>Mengembangkan web yang rapi,cepat, dan fungsional</h1>
-      <p class="lede">
-        Mahasiswa Sistem Informasi semester 11 yang fokus mendalami frontend & backend development. Terbiasa belajar dan menyelesaikan project secara mandiri di luar jam formal, dari konsep sampai deploy.
-      </p>
-    </div>
-  </section>
-
-  <section id="projects" class="projects">
-    <div class="wrap">
-      <h2>Project</h2>
-
-      <article class="project-card">
-        <div class="project-info">
-          <h3>Cek-Cuaca</h3>
-          <p>
-            Aplikasi cek cuaca sederhana dengan fitur pencarian lokasi dan
-            tampilan informasi cuaca real-time. Terintegrasi dengan API cuaca
-            publik untuk menampilkan data terkini.
-          </p>
-          <ul class="tags">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Fetch API</li>
-          </ul>
-        </div>
-        <div class="project-links">
-          <a href="https://pradiarya.github.io/Cek_Cuaca/" target="_blank" class="btn-outline">Lihat live</a>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <div class="project-info">
-          <h3>Aksara Coffee Roastery</h3>
-          <p>
-            Landing page company untuk brand kopi fiktif, dengan layout
-            responsif, form newsletter, dan identitas visual yang
-            dirancang khusus untuk brief ini.
-          </p>
-          <ul class="tags">
-            <li>HTML</li>
-            <li>CSS Grid</li>
-            <li>Responsive Design</li>
-          </ul>
-        </div>
-        <div class="project-links">
-          <a href="https://pradiarya.github.io/aksara-coffee/" target="_blank" class="btn-outline">Lihat live</a>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section id="skills" class="skills">
-    <div class="wrap">
-      <h2>Sedang dipelajari</h2>
-      <div class="skills-grid">
-        <div>
-          <span class="skill-label">Frontend</span>
-          <p>HTML semantik, CSS (Flexbox &amp; Grid), JavaScript dasar hingga DOM manipulation</p>
-        </div>
-        <div>
-          <span class="skill-label">Tools</span>
-          <p>Git &amp; GitHub untuk version control, terminal command line</p>
-        </div>
-        <div>
-          <span class="skill-label">Sedang dipelajari</span>
-          <p>Integrasi API, dasar backend, dan alur kerja testing/bug fixing</p>
+  <main id="top">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> SISTEM INFORMASI · WEB DEVELOPMENT</p>
+        <h1 id="hero-title">Merangkai ide<br>jadi <span class="outlined">sesuatu</span><br><span class="highlight">yang bekerja.</span></h1>
+        <div class="hero-bottom">
+          <p class="hero-intro">Halo, saya Arya — mahasiswa Sistem Informasi yang senang membangun pengalaman web yang jernih, berguna, dan terasa manusiawi.</p>
+          <a class="text-link" href="#work">Lihat yang sedang saya buat <span aria-hidden="true">↓</span></a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section id="certifications" class="certifications">
-    <div class="wrap">
-      <h2>Sertifikasi</h2>
-      <ul class="cert-list">
-        <li>
-          <span class="cert-name">Dasar Pemrograman Berbasis Web</span>
-          <span class="cert-meta">Universitas Gunadarma — Februari 2024</span>
-          <a href="certificates/dasar-pemrograman-web.pdf" target="_blank">Lihat sertifikat</a>
-        </li>
-        <li>
-          <span class="cert-name">Dasar Sistem Operasi untuk Server</span>
-          <span class="cert-meta">Universitas Gunadarma — Februari 2024</span>
-          <a href="certificates/dasar-sistem-operasi-server.pdf" target="_blank">Lihat sertifikat</a>
-        </li>
-        <li>
-          <span class="cert-name">Pemrograman Go untuk Tingkat Pemula</span>
-          <span class="cert-meta">Universitas Gunadarma — Agustus 2024</span>
-          <a href="certificates/pemrograman-go-pemula.pdf" target="_blank">Lihat sertifikat</a>
-        </li>
-        <li>
-          <span class="cert-name">Aptitude Test</span>
-          <span class="cert-meta">Universitas Gunadarma — Mei 2025</span>
-          <a href="certificates/aptitude-test.pdf" target="_blank">Lihat sertifikat</a>
-        </li>
-        <li>
-          <span class="cert-name">Intro to Software Engineering — Coding Camp</span>
-          <span class="cert-meta">RevoU — Agustus 2026</span>
-          <a href="certificates/coding-camp-software-engineering.pdf" target="_blank">Lihat sertifikat</a>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <div class="wrap">
-      <h2>Terbuka untuk kesempatan magang</h2>
-      <p>Kalau ada posisi yang cocok, atau sekadar mau ngobrol soal project di atas, hubungi lewat:</p>
-      <div class="contact-links">
-        <a href="mailto:pradiarya9@gmail.com" id="email-link">pradiarya9@gmail.com</a>
-        <a href="https://github.com/pradiarya" target="_blank">github.com/pradiarya</a>
+      <div class="hero-art" aria-label="Ilustrasi abstrak inisial Arya">
+        <div class="art-stamp">PORTFOLIO<br>2026 — ID</div>
+        <div class="art-orbit orbit-one"></div>
+        <div class="art-orbit orbit-two"></div>
+        <div class="art-sun"></div>
+        <div class="art-letter">A<span>.</span></div>
+        <p class="art-caption">belajar, mencoba,<br>lalu membuat lebih baik ↗</p>
+        <span class="art-cross cross-one">✳</span>
+        <span class="art-cross cross-two">+</span>
       </div>
-    </div>
-  </section>
+      <div class="hero-index"><span>PORTFOLIO / 001</span><span>JAKARTA, INDONESIA <span class="index-arrow">↘</span></span></div>
+    </section>
+
+    <section class="work-section" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">01 / PILIHAN KARYA</p>
+            <h2 id="work-title">Dari layar<br>ke <em>kenyataan.</em></h2>
+          </div>
+          <p class="section-note">Proyek kecil, pelajaran besar.<br>Dibuat sambil terus berkembang.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card project-weather">
+            <a class="project-visual weather-visual" href="https://pradiarya.github.io/Cek_Cuaca/" target="_blank" rel="noopener noreferrer" aria-label="Buka demo Cek-Cuaca">
+              <div class="visual-topline"><span>ATMOSPHERE / 01</span><span>LIVE DATA ↗</span></div>
+              <div class="weather-ui">
+                <div class="weather-location"><span>JAKARTA, ID</span><span>↗</span></div>
+                <div class="weather-main"><span class="weather-temp">28<span>°</span></span><span class="weather-icon" aria-hidden="true">☼</span></div>
+                <div class="weather-condition">Cerah berawan</div>
+                <div class="weather-divider"></div>
+                <div class="weather-details"><span>KELEMBAPAN <b>72%</b></span><span>ANGIN <b>12 km/h</b></span></div>
+              </div>
+              <div class="visual-foot"><span>FORECAST, AT A GLANCE.</span><span>01 — 02</span></div>
+            </a>
+            <div class="project-meta"><span>01 / WEB APP</span><span>2025</span></div>
+            <div class="project-title-row"><h3>Cek-Cuaca</h3><a class="round-link" href="https://pradiarya.github.io/Cek_Cuaca/" target="_blank" rel="noopener noreferrer" aria-label="Lihat Cek-Cuaca live">↗</a></div>
+            <p class="project-description">Info cuaca yang ringkas dan mudah dibaca, dengan pencarian lokasi dan data real-time dari API publik.</p>
+            <ul class="tags" aria-label="Teknologi Cek-Cuaca"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Fetch API</li></ul>
+          </article>
+
+          <article class="project-card project-coffee">
+            <a class="project-visual coffee-visual" href="https://pradiarya.github.io/aksara-coffee/" target="_blank" rel="noopener noreferrer" aria-label="Buka demo Aksara Coffee Roastery">
+              <div class="coffee-nav"><span>AKSARA<span class="coffee-mark">®</span></span><span>ROASTERY &nbsp; / &nbsp; EST. 2024</span><span>MENU ↗</span></div>
+              <div class="coffee-scene">
+                <span class="coffee-sun"></span>
+                <span class="coffee-bean bean-one"></span>
+                <span class="coffee-bean bean-two"></span>
+                <div class="coffee-copy"><span>SMALL BATCH, BIG FEELING</span><strong>Good days<br>start <i>slow.</i></strong></div>
+                <div class="coffee-cup"><span></span></div>
+              </div>
+              <div class="coffee-foot"><span>ROASTED WITH INTENTION</span><span>SCROLL TO EXPLORE ↓</span></div>
+            </a>
+            <div class="project-meta"><span>02 / BRAND SITE</span><span>2025</span></div>
+            <div class="project-title-row"><h3>Aksara Coffee Roastery</h3><a class="round-link" href="https://pradiarya.github.io/aksara-coffee/" target="_blank" rel="noopener noreferrer" aria-label="Lihat Aksara Coffee live">↗</a></div>
+            <p class="project-description">Landing page untuk brand kopi fiktif, meracik identitas hangat dengan layout responsif dan newsletter.</p>
+            <ul class="tags" aria-label="Teknologi Aksara Coffee"><li>HTML</li><li>CSS Grid</li><li>Responsive</li></ul>
+          </article>
+        </div>
+        <div class="work-outro"><span>MASIH BANYAK YANG SEDANG DIPIKIRKAN</span><span class="outro-line"></span><span>TO BE CONTINUED ↗</span></div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about" aria-labelledby="about-title">
+      <div class="wrap about-layout">
+        <div class="about-heading">
+          <p class="eyebrow">02 / SEDIKIT TENTANG SAYA</p>
+          <h2 id="about-title">Belum selesai<br>belajar. <em>Memang.</em></h2>
+          <span class="about-doodle" aria-hidden="true">✳</span>
+        </div>
+        <div class="about-content">
+          <p class="about-lead">Saya percaya cara terbaik belajar adalah dengan membuat sesuatu — lalu berani membongkarnya lagi.</p>
+          <p class="about-copy">Saat ini saya mahasiswa Sistem Informasi semester 11 yang mendalami frontend dan backend development. Saya menikmati proses dari halaman kosong sampai detail kecilnya terasa pas, sambil terus mengasah fondasi teknis lewat proyek mandiri.</p>
+          <div class="skill-list">
+            <div class="skill-row"><span class="skill-number">01</span><span class="skill-name">Frontend</span><span class="skill-detail">HTML semantik · CSS · JavaScript · DOM</span><span class="skill-symbol">↗</span></div>
+            <div class="skill-row"><span class="skill-number">02</span><span class="skill-name">Tools</span><span class="skill-detail">Git · GitHub · Command line</span><span class="skill-symbol">↗</span></div>
+            <div class="skill-row"><span class="skill-number">03</span><span class="skill-name">Next up</span><span class="skill-detail">Integrasi API · Backend · Testing</span><span class="skill-symbol">↗</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="credentials-section" id="credentials" aria-labelledby="credentials-title">
+      <div class="wrap credentials-layout">
+        <div class="credentials-intro">
+          <p class="eyebrow">03 / CATATAN PERJALANAN</p>
+          <h2 id="credentials-title">Belajar,<br><em>terarsip.</em></h2>
+          <p>Sertifikat bukan garis finish. Buat saya, ini pengingat tentang hal-hal baru yang pernah dimulai.</p>
+        </div>
+        <ol class="certificate-list">
+          <li><span class="certificate-year">2026</span><div class="certificate-title"><strong>Intro to Software Engineering</strong><span>Coding Camp · RevoU</span></div><a href="certificates/coding-camp-software-engineering.pdf" target="_blank" rel="noopener noreferrer" aria-label="Lihat sertifikat Intro to Software Engineering">↗</a></li>
+          <li><span class="certificate-year">2025</span><div class="certificate-title"><strong>Aptitude Test</strong><span>Universitas Gunadarma</span></div><a href="certificates/aptitude-test.pdf" target="_blank" rel="noopener noreferrer" aria-label="Lihat sertifikat Aptitude Test">↗</a></li>
+          <li><span class="certificate-year">2024</span><div class="certificate-title"><strong>Pemrograman Go untuk Tingkat Pemula</strong><span>Universitas Gunadarma</span></div><a href="certificates/pemrograman-go-pemula.pdf" target="_blank" rel="noopener noreferrer" aria-label="Lihat sertifikat Pemrograman Go">↗</a></li>
+          <li><span class="certificate-year">2024</span><div class="certificate-title"><strong>Dasar Sistem Operasi untuk Server</strong><span>Universitas Gunadarma</span></div><a href="certificates/dasar-sistem-operasi-server.pdf" target="_blank" rel="noopener noreferrer" aria-label="Lihat sertifikat Dasar Sistem Operasi untuk Server">↗</a></li>
+          <li><span class="certificate-year">2024</span><div class="certificate-title"><strong>Dasar Pemrograman Berbasis Web</strong><span>Universitas Gunadarma</span></div><a href="certificates/dasar-pemrograman-web.pdf" target="_blank" rel="noopener noreferrer" aria-label="Lihat sertifikat Dasar Pemrograman Berbasis Web">↗</a></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="wrap contact-wrap">
+        <p class="eyebrow"><span class="status-dot"></span> TERBUKA UNTUK KESEMPATAN MAGANG</p>
+        <h2 id="contact-title">Ada ide?<br><em>Mulai dari sini.</em></h2>
+        <p class="contact-note">Kesempatan, kolaborasi, atau obrolan santai tentang web — inbox saya terbuka.</p>
+        <div class="contact-actions">
+          <a class="contact-email" href="mailto:pradiarya9@gmail.com">pradiarya9@gmail.com <span aria-hidden="true">↗</span></a>
+          <button class="copy-button" type="button" id="copy-email" aria-label="Salin alamat email">SALIN EMAIL <span aria-hidden="true">＋</span></button>
+          <a class="github-link" href="https://github.com/pradiarya" target="_blank" rel="noopener noreferrer">GITHUB ↗</a>
+        </div>
+        <p class="copy-status" id="copy-status" aria-live="polite"></p>
+        <div class="contact-decoration" aria-hidden="true">A<span>.</span></div>
+      </div>
+    </section>
+  </main>
 
   <footer class="site-footer">
-    <div class="wrap">
-      <span>Arya</span>
-      <span>&copy; 2026</span>
-    </div>
+    <div class="wrap footer-inner"><a class="wordmark" href="#top">arya<span>.</span></a><span>DIBUAT DENGAN RASA INGIN TAHU.</span><span>© 2026 · JAKARTA</span></div>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
